@@ -744,6 +744,9 @@ a {
         padding: 0;
         order: 2;
     }
+    .h2-heb {
+        padding: 2% 0 0 2%;
+    }
     #hebergements {
         display: flex;
         flex-direction: column;
@@ -759,6 +762,7 @@ a {
     }
     #afficher-plus {
         bottom: -15px;
+        padding-left: 3%;
     }
     /* Activités à Marseille */
     #section-activites {
