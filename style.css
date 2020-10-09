@@ -1,0 +1,824 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Reset css */
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.blocked {
+    display: block;
+    clear: both;
+}
+
+#page {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Header : logo + menu navigation*/
+
+
+/*logo*/
+
+#logo {
+    float: left;
+    height: 50%;
+    padding: 2%;
+}
+
+
+/*Menu navigation*/
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.menu-heb {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding: 3%;
+    font-size: 1.2em;
+}
+
+.menu-heb a {
+    color: #0065FC;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.menu-heb a:hover {
+    color: #0065FC;
+}
+
+.menu-heb a:active {
+    color: #0065FC;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.menu-act {
+    padding: 3%;
+    padding-top: 3.1%;
+    font-size: 1.2em;
+}
+
+.menu-act a {
+    color: black;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.menu-act a:hover {
+    color: #0065FC;
+}
+
+.menu-act a:active {
+    color: #0065FC;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.menu-subs {
+    color: #0065FC;
+    font-weight: bolder;
+    padding: 3%;
+    padding-top: 3.1%;
+    font-size: 1.2em;
+}
+
+.menu-subs a {
+    color: #0065FC;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.menu-subs a:hover {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+/* MAIN BLOCK = SECTION FILTRES + SECTION HEBERGEMENTS + SECTION ACTIVITES + ASIDE */
+
+#main {
+    width: 100%;
+}
+
+
+/* SECTION FILTRES: slogan + localité + filtres + infos */
+
+
+/* Slogan */
+
+#slogan {
+    margin-left: 2%;
+    font-size: 1.4em;
+}
+
+.slogan2 {
+    margin-left: 2%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    font-size: 1em;
+}
+
+
+/* Localité */
+
+#searchlocation {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logosearch {
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.searchville {
+    font-weight: bold;
+    height: 42.7px;
+    padding-left: 5%;
+    font-size: 0.9em;
+}
+
+#loupe {
+    display: none;
+}
+
+.searchbutton {
+    padding: 15px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9em;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+.searchbutton:hover {
+    text-decoration: underline;
+    color: #DEEBFF;
+}
+
+
+/* Filtres */
+
+#sectionfiltres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.filtre {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.section-filtres {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px 0 20px 25px;
+}
+
+.textefiltres:hover {
+    text-decoration: solid;
+    color: #0065FC;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+    color: #0065FC;
+    border-radius: 49px;
+    background-color: #DEEBFF;
+    padding: 6px;
+    height: 35px;
+    width: 35px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.cadresfiltres {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid #F2F2F2;
+    border-left: 0cm;
+    border-radius: 15cm;
+    margin-right: 20px;
+    min-width: 120px;
+}
+
+.textefiltres {
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 15px
+}
+
+
+/* Infos */
+
+#info {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.fa-info {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 60cm;
+    padding: 6px;
+    align-self: flex-start;
+}
+
+.infotexte {
+    font-size: 0.8em;
+    padding: 9px;
+}
+
+
+/* SECTION :  HEBERGEMENT + LES PLUS POPULAIRES */
+
+#heb-pop {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+
+/* Section :Hébergement + Afficher+ */
+
+
+/* Hébergements Marseille */
+
+#section-heb {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 68%;
+    margin-right: 1%;
+    border-radius: 2%;
+    padding: 2%;
+    position: relative;
+}
+
+
+/* class="heb-marseille" */
+
+.h2-heb {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top: 2%;
+}
+
+#hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.heb-titre-prix-etoiles {
+    height: 30%;
+    padding-left: 3%;
+}
+
+.titre-heb {
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 3%;
+}
+
+.texte-prix {
+    font-size: 0.9em;
+    padding-top: 0.3em;
+}
+
+.prix-heb {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pics-heb {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+    max-width: 100%;
+}
+
+.stars {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+
+.star-bleue {
+    color: #0065FC;
+}
+
+.star-grise {
+    color: #F2F2F2;
+}
+
+#hebergements a {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    border: 3px solid white;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 8%;
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+    margin: 1.5%;
+}
+
+#img-cannebiere {
+    background-image: url(img/hebergements/la-cannebiere.jpg);
+}
+
+#img-hotel-du-port {
+    background-image: url(img/hebergements/hotel-du-port.jpg);
+}
+
+#img-hotel-mouettes {
+    background-image: url(img/hebergements/hotel-les-mouettes.jpg);
+}
+
+#img-hotel-mer {
+    background-image: url(img/hebergements/hotel-de-la-mer.jpg);
+}
+
+#img-panier {
+    background-image: url(img/hebergements/auberge-le-panier.jpg);
+}
+
+#img-amina {
+    background-image: url(img/hebergements/hotel-chez-amina.jpg);
+}
+
+
+/* Afficher plus */
+
+#afficher-plus {
+    font-weight: bold;
+    font-size: 0.95em;
+    position: absolute;
+    bottom: 4%;
+}
+
+
+/* Section : les plus populaires */
+
+#section-populaires {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    width: 32%;
+    margin-left: 1%;
+    border-radius: 2%;
+    padding: 2%;
+}
+
+
+/*class="les-plus-populaires"*/
+
+.h2-pop {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.pop-schema {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.schema {
+    margin-left: auto;
+    order: 2;
+    font-size: x-large;
+    object-position: center;
+}
+
+#populaires {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    height: 86%;
+}
+
+#populaires a {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid white;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 20px;
+    width: 95%;
+    overflow: hidden;
+    background-color: white;
+    justify-content: center;
+    height: 33%;
+    cursor: pointer;
+    margin: 2%;
+}
+
+.pics-populaires {
+    display: flex;
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pop-titre-prix-etoiles {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 3%;
+}
+
+.titre-pop {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.texte-prix-pop {
+    font-size: 0.75em;
+    padding-top: 0.3em;
+}
+
+.prix-heb {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.stars-pop {
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+
+
+/* SECTION : Activités */
+
+#section-activites {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.h2-act {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top: 2%;
+}
+
+.activites {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.activites div a {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 3%;
+    background-color: white;
+    height: 100%
+}
+
+.pics-act {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(1.1);
+}
+
+.texte-act {
+    display: flex;
+    height: 20%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.cadre1,
+.cadre2,
+.cadre3,
+.cadre4 {
+    width: 30%;
+}
+
+#vieux-port {
+    height: 98%;
+}
+
+#pomegues {
+    height: 58%;
+}
+
+#frioul {
+    height: 38%;
+}
+
+#calanques {
+    height: 98%;
+}
+
+#dame {
+    height: 48%;
+}
+
+#longchamps {
+    height: 48%;
+}
+
+
+/* FOOTER */
+
+#footer {
+    padding: 2%;
+    background-color: #F2F2F2;
+    width: 96%;
+    margin-top: 3%;
+}
+
+.foot-details {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.foot-propos,
+.foot-heb,
+.foot-assist {
+    width: 32.5%;
+}
+
+.titre-foot {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+.foot-text {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 2%;
+}
+
+
+/* CSS pour les screens */
+
+@media all and (min-device-width: 900px) {
+    .searchbutton {
+        padding: 15px;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bolder;
+        font-size: 0.9em;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        margin-left: 0px;
+    }
+    .searchbutton:hover {
+        text-decoration: underline;
+        color: #DEEBFF;
+    }
+}
+
+
+/*CSS pour les tablettes*/
+
+@media all and (max-device-width: 900px) {}
+
+
+/* CSS pour les MOBILES */
+
+@media all and (max-device-width: 480px) {
+    /* Menu navigation */
+    #logo {
+        display: none;
+    }
+    #topnav {
+        height: 140px;
+        position: relative;
+        width: 100%;
+        background-image: url(img/logo/Reservia.svg);
+        background-repeat: no-repeat;
+        background-position-y: 30px;
+        background-position-x: 15px;
+    }
+    .menu-heb {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 164px;
+        text-align: center;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    .menu-act {
+        position: absolute;
+        bottom: 0;
+        width: 164px;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .menu-subs {
+        padding-top: 42px;
+    }
+    /* Slogan */
+    #slogan {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .slogan2 {
+        margin-bottom: 30px;
+    }
+    /* Section Recherche */
+    #searchlocation {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    #loupe {
+        display: block;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 10px;
+        width: 50px;
+        margin-left: -5px;
+    }
+    .searchbutton {
+        display: none;
+    }
+    #sectionfiltres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .section-filtres-mobile {
+        margin: 10px;
+        padding: 0%;
+    }
+    .cadresfiltres {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .filtre {
+        margin-left: 10px;
+    }
+    /* Info */
+    .infotexte {
+        font-size: 0.9em;
+    }
+    /* Section HEB-POP */
+    #heb-pop {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /* SECTION : Les plus populaires */
+    #section-populaires {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        order: 1;
+    }
+    /*  SECTION : Hébergements */
+    #section-heb {
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        order: 2;
+    }
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #hebergements a {
+        width: 85%;
+        border-radius: 10px;
+    }
+    #cannebiere,
+    #hotel-du-port,
+    #hotel-mouettes,
+    #hotel-mer,
+    #panier,
+    #amina {}
+    /* Activités à Marseille */
+    #section-activites {
+        margin: 10px 0 0 0;
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+    .activites {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+    #vieux-port,
+    #pomegues,
+    #frioul,
+    #calanques,
+    #dame,
+    #longchamps {
+        width: 85%;
+    }
+}
+
+
+/* Footer */
+
+.foot-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-propos,
+.foot-heb,
+.foot-assist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.foot-text {
+    padding: 5px 0 5px 0;
+    margin: 0;
+}
+
+.foot-fetish {
+    height: 100px;
+}
+
+.titre-foot {
+    margin-top: 20px;
+}
+
+
+}
+
+}
+
+/*@media all and (max-device-width: 480px);*/
