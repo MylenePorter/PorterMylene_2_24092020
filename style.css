@@ -13,15 +13,13 @@ a {
     /* no underline */
 }
 
-.blocked {
-    display: block;
-    clear: both;
-}
-
 #page {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* CSS Général */
 
 
 /*Header : logo + menu navigation*/
@@ -117,6 +115,11 @@ a {
 
 
 /* SECTION FILTRES: slogan + localité + filtres + infos */
+
+.blocked {
+    display: block;
+    clear: both;
+}
 
 
 /* Slogan */
