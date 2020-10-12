@@ -606,7 +606,11 @@ a {
 .foot-text {
     font-size: 1.1em;
     font-weight: normal;
+<<<<<<< HEAD
     padding: 8px 0px 8px 10px;
+=======
+    padding: 7px 0px 7px 0px;
+>>>>>>> 8b0c41d02534776cf29d0284ab533b95c071d854
 }
 
 
