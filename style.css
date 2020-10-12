@@ -217,7 +217,7 @@ a {
     color: #0065FC;
     border-radius: 49px;
     background-color: #DEEBFF;
-    padding: 6px;
+    padding: 12px 10px 3px 10px;
     height: 35px;
     width: 35px;
     font-size: x-large;
@@ -304,6 +304,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 2%;
+    height: 37%;
 }
 
 .heb-titre-prix-etoiles {
@@ -347,7 +348,7 @@ a {
 }
 
 .star-grise {
-    color: #F2F2F2;
+    color: #d3cdcd;
 }
 
 #hebergements a {
@@ -467,6 +468,7 @@ a {
     flex-direction: column;
     width: 60%;
     padding: 3%;
+    position: relative;
 }
 
 .titre-pop {
@@ -490,6 +492,8 @@ a {
     display: flex;
     flex-direction: row;
     height: 10%;
+    position: absolute;
+    bottom: 5px;
 }
 
 
@@ -520,13 +524,12 @@ a {
 .activites div a {
     display: flex;
     flex-direction: column;
-    border: 3px solid white;
-    box-shadow: 2px 2px 8px grey;
     border-radius: 20px;
     overflow: hidden;
     margin: 3%;
     background-color: #FFFFF9;
-    height: 100%
+    height: 100%;
+    box-shadow: 0px 8px 7px 0px #f2f2f2;
 }
 
 .pics-act {
@@ -575,10 +578,10 @@ a {
 /* FOOTER */
 
 #footer {
-    padding: 2%;
+    padding: 30px 0px 0px 0px;
     background-color: #F2F2F2;
-    width: 96%;
-    margin-top: 3%;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .foot-details {
@@ -597,13 +600,13 @@ a {
 .titre-foot {
     font-size: 1.2em;
     font-weight: bold;
-    padding-bottom: 3%;
+    padding: 8px 0px 8px 10px;
 }
 
 .foot-text {
     font-size: 1.1em;
     font-weight: normal;
-    padding: 2%;
+    padding: 8px 0px 8px 10px;
 }
 
 
@@ -635,9 +638,172 @@ a {
 }
 
 
-/* CSS pour tablettes et mobiles */
+/* CSS pour tablettes */
 
 @media all and (max-width: 900px) {
+    /* Slogan */
+    #slogan {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .slogan2 {
+        margin-bottom: 30px;
+    }
+    /* Section Recherche */
+    #searchlocation {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    #sectionfiltres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .section-filtres-mobile {
+        margin: 10px;
+        padding: 0%;
+    }
+    .cadresfiltres {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .filtre {
+        margin-left: 10px;
+    }
+    /* Info */
+    .infotexte {
+        font-size: 0.9em;
+    }
+    /* Section HEB-POP */
+    #heb-pop {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /* SECTION : Les plus populaires */
+    #section-populaires {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        order: 1;
+    }
+    #populaires {
+        width: 95%
+    }
+    .pics-populaires {
+        width: 45%;
+    }
+    .pop-titre-prix-etoiles {
+        width: 55%;
+    }
+    /*  SECTION : Hébergements */
+    #section-heb {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        order: 2;
+    }
+    .h2-heb {
+        padding: 2% 0 0 2%;
+    }
+    #hebergements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    #hebergements a {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        border-radius: 10px;
+    }
+    #cannebiere,
+    #hotel-du-port,
+    #hotel-mouetttes,
+    #hotel-mer,
+    #le-panier,
+    #amina {
+        display: flex;
+        flex-direction: row;
+    }
+    .pics-heb {
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .heb-titre-prix-etoiles {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        padding: 3%;
+    }
+    #afficher-plus {
+        bottom: -15px;
+        padding-left: 3%;
+    }
+    /* Activités à Marseille */
+    #section-activites {
+        margin: 25px 0 0 0;
+        padding: 0 0 0 10px;
+        width: 100%;
+    }
+    .activites {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+        width: 90%;
+        align-items: center;
+    }
+    .cadre1,
+    .cadre2,
+    .cadre3,
+    .cadre4 {}
+    #vieux-port,
+    #pomegues,
+    #frioul,
+    #calanques,
+    #dame,
+    #longchamps {
+        height: 200px;
+        width: 300px;
+    }
+    /* Footer */
+    #footer {
+        padding: 15px 0px 15px 0px;
+    }
+    .foot-details {
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-propos,
+    .foot-heb,
+    .foot-assist {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+    .foot-text {
+        padding: 5px 0 5px 0;
+        margin: 0;
+    }
+}
+
+
+/* CSS pour les mobiles */
+
+@media all and (max-width: 480px) {
     /* Menu navigation */
     #logo {
         display: none;
@@ -655,7 +821,7 @@ a {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 164px;
+        width: 44%;
         text-align: center;
         border-top: none;
         border-bottom: 3px solid #0065FC;
@@ -663,7 +829,7 @@ a {
     .menu-act {
         position: absolute;
         bottom: 0;
-        width: 164px;
+        width: 44%;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
     }
@@ -731,6 +897,9 @@ a {
         border-radius: 0;
         order: 1;
     }
+    #populaires {
+        width: 95%
+    }
     /*  SECTION : Hébergements */
     #section-heb {
         width: 100%;
@@ -745,7 +914,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 95%;
     }
     #hebergements a {
         width: 85%;
@@ -767,9 +936,8 @@ a {
     .activites {
         display: flex;
         flex-direction: column;
-        align-content: center;
         height: auto;
-        width: 100%;
+        width: 90%;
         align-items: center;
     }
     .cadre1,
@@ -786,6 +954,9 @@ a {
         width: 300px;
     }
     /* Footer */
+    #footer {
+        padding: 15px 0px 15px 0px;
+    }
     .foot-details {
         display: flex;
         flex-direction: column;
@@ -795,22 +966,12 @@ a {
     .foot-assist {
         display: flex;
         flex-direction: column;
-        width: 100%;
         height: 100%;
         margin-top: 5px;
         padding-bottom: 10px;
     }
     .foot-text {
-        padding: 5px 0 5px 0;
+        padding: 5px 0px 5px 0px;
         margin: 0;
     }
-    .foot-fetish {
-        height: 100px;
-    }
-    .titre-foot {
-        margin-top: 20px;
-    }
 }
-
-
-/*@media all and (max-device-width: 480px);*/
