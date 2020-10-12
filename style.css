@@ -39,20 +39,20 @@ a {
 .menu {
     display: flex;
     justify-content: flex-end;
-    margin-right: 3%;
+    margin-right: 25px;
 }
 
 .menu-heb {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    padding: 3%;
+    padding: 20px;
     font-size: 1.2em;
 }
 
 .menu-heb a {
     color: #0065FC;
     text-decoration: none;
-    padding: 3%;
+    padding: 20px;
 }
 
 .menu-heb a:hover {
@@ -66,15 +66,15 @@ a {
 }
 
 .menu-act {
-    padding: 3%;
-    padding-top: 3.1%;
+    padding: 23px;
+    padding-top: 25px;
     font-size: 1.2em;
 }
 
 .menu-act a {
     color: black;
     text-decoration: none;
-    padding: 3%;
+    padding: 23px;
 }
 
 .menu-act a:hover {
@@ -90,15 +90,14 @@ a {
 .menu-subs {
     color: #0065FC;
     font-weight: bolder;
-    padding: 3%;
-    padding-top: 3.1%;
+    padding: 25px 23px 23px 23px;
     font-size: 1.2em;
 }
 
 .menu-subs a {
     color: #0065FC;
     text-decoration: none;
-    padding: 3%;
+    padding: 23px;
 }
 
 .menu-subs a:hover {
