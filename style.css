@@ -427,9 +427,10 @@ a {
 }
 
 .schema {
-    justify-content: flex-end;
     order: 2;
     padding-right: 10px;
+    padding-left: 10px;
+    margin-left: auto;
     font-size: x-large;
 }
 
@@ -936,6 +937,7 @@ a {
     /* MOB - Section HEB-POP */
     #heb-pop {
         align-items: center;
+        width: 96%;
     }
     /* MOB - SECTION : Les plus populaires */
     #section-populaires {
@@ -943,7 +945,6 @@ a {
         flex-direction: column;
         width: 100%;
         margin: 0;
-        padding-top: 20px;
         border-radius: 0;
         order: 1;
     }
