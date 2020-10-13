@@ -39,7 +39,6 @@ a {
 .menu {
     display: flex;
     justify-content: flex-end;
-    margin-right: 25px;
 }
 
 .menu-heb {
@@ -145,10 +144,10 @@ a {
 }
 
 .logosearch {
-    padding: 16px 18px 16px 18px;
+    padding: 16px 18px 16px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     margin-right: -5px;
 }
 
@@ -195,7 +194,7 @@ a {
 }
 
 .filtre {
-    margin-top: 15px;
+    padding-top: 20px;
     font-weight: bold;
     font-size: 0.95em;
 }
@@ -230,9 +229,9 @@ a {
 .cadresfiltres {
     display: flex;
     flex-direction: row;
-    border: 3px solid #F2F2F2;
+    border: 3px solid #f2f2f2;
     border-left: 0cm;
-    border-radius: 15cm;
+    border-radius: 30px;
     margin-right: 20px;
     min-width: 120px;
 }
@@ -240,7 +239,7 @@ a {
 .textefiltres {
     font-weight: bold;
     font-size: 0.95em;
-    padding: 15px
+    padding: 17px 15px 15px 15px;
 }
 
 
@@ -254,7 +253,7 @@ a {
 
 .fa-info {
     color: #0065FC;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
     border-radius: 60cm;
     padding: 6px;
     align-self: flex-start;
@@ -288,9 +287,8 @@ a {
     background-color: #f2f2f2;
     width: 68%;
     margin-right: 1%;
-    border-radius: 2%;
+    border-radius: 20px;
     padding: 2%;
-    position: relative;
 }
 
 
@@ -306,8 +304,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2%;
-    height: 37%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .heb-titre-prix-etoiles {
@@ -335,15 +333,15 @@ a {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60%;
+    height: 125px;
     max-width: 100%;
 }
 
 .stars {
-    padding-top: 6%;
     display: flex;
     flex-direction: row;
-    height: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .star-bleue {
@@ -351,7 +349,7 @@ a {
 }
 
 .star-grise {
-    color: #d3cdcd;
+    color: #f2f2f2;
 }
 
 #hebergements a {
@@ -359,10 +357,9 @@ a {
     flex-direction: column;
     width: 29%;
     border: 3px solid #FFFFF9;
-    box-shadow: 2px 2px 8px grey;
-    border-radius: 8%;
+    box-shadow: 2px 2px 8px #f2f2f2;
+    border-radius: 20px;
     overflow: hidden;
-    height: 100%;
     background-color: white;
     margin: 1.5%;
 }
@@ -397,8 +394,7 @@ a {
 #afficher-plus {
     font-weight: bold;
     font-size: 0.95em;
-    position: absolute;
-    bottom: 4%;
+    padding-top: 10px;
 }
 
 
@@ -410,12 +406,18 @@ a {
     background-color: #f2f2f2;
     width: 32%;
     margin-left: 1%;
-    border-radius: 2%;
+    border-radius: 20px;
     padding: 2%;
 }
 
 
 /*class="les-plus-populaires"*/
+
+.pop-schema {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
 
 .h2-pop {
     font-size: 1.4em;
@@ -424,31 +426,24 @@ a {
     padding-bottom: 2%;
 }
 
-.pop-schema {
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
-}
-
 .schema {
-    margin-left: auto;
+    justify-content: flex-end;
     order: 2;
+    padding-right: 10px;
     font-size: x-large;
-    object-position: center;
 }
 
 #populaires {
     display: flex;
     flex-direction: column;
     margin: 2%;
-    height: 86%;
 }
 
 #populaires a {
     display: flex;
     flex-direction: row;
     border: 3px solid #FFFFF9;
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 2px 2px 5px #f2f2f2;
     border-radius: 20px;
     width: 95%;
     overflow: hidden;
@@ -462,6 +457,7 @@ a {
 .pics-populaires {
     display: flex;
     width: 40%;
+    height: 150px;
     object-fit: cover;
     object-position: center;
 }
@@ -505,12 +501,13 @@ a {
 #section-activites {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 2%;
 }
 
 .h2-act {
     display: flex;
-    justify-content: flex-start;
+    align-self: flex-start;
     font-size: 1.4em;
     font-weight: 700;
     padding-top: 2%;
@@ -530,7 +527,7 @@ a {
     border-radius: 20px;
     overflow: hidden;
     margin: 3%;
-    background-color: #FFFFF9;
+    background-color: #FFFFFF;
     height: 100%;
     box-shadow: 0px 8px 7px 0px #f2f2f2;
 }
@@ -582,7 +579,7 @@ a {
 
 #footer {
     padding: 15px 0px 15px 0px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     width: 100%;
     margin-top: 40px;
 }
@@ -645,11 +642,11 @@ a {
 /* CSS pour tablettes */
 
 @media all and (max-width: 900px) {
-    /* Logo */
+    /* TAB - Logo */
     #logo {
         display: none;
     }
-    /* Menu nav */
+    /* TAB - Menu nav */
     #topnav {
         height: 140px;
         position: relative;
@@ -663,7 +660,7 @@ a {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 44%;
+        width: 45%;
         text-align: center;
         border-top: none;
         border-bottom: 3px solid #0065FC;
@@ -671,14 +668,14 @@ a {
     .menu-act {
         position: absolute;
         bottom: 0;
-        width: 44%;
+        width: 50%;
         text-align: center;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 3px solid #f2f2f2;
     }
     .menu-subs {
         padding-top: 42px;
     }
-    /* Slogan */
+    /* TAB - Slogan */
     #slogan {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -686,7 +683,7 @@ a {
     .slogan2 {
         margin-bottom: 30px;
     }
-    /* Section Recherche */
+    /* TAB - Section Recherche */
     #searchlocation {
         margin-bottom: 40px;
         justify-content: center;
@@ -708,11 +705,11 @@ a {
     .filtre {
         margin-left: 10px;
     }
-    /* Info */
+    /* TAB - Info */
     .infotexte {
         font-size: 0.9em;
     }
-    /* Section HEB-POP */
+    /* TAB - Section HEB-POP */
     #heb-pop {
         display: flex;
         flex-flow: column wrap;
@@ -720,46 +717,61 @@ a {
         margin: 0;
         padding: 0;
     }
-    /* SECTION : Les plus populaires */
+    /* TAB - SECTION : Les plus populaires */
     #section-populaires {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 96%;
         border-radius: 0;
+        margin: 0;
         order: 1;
     }
     #populaires {
-        width: 95%
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+    .h2-pop {
+        padding: 0;
     }
     .pics-populaires {
+        display: flex;
         width: 45%;
+        object-fit: cover;
+        object-position: center;
     }
     .pop-titre-prix-etoiles {
         width: 55%;
     }
-    /*  SECTION : Hébergements */
+    .titre-pop {
+        font-size: 1em;
+    }
+    .texte-prix-pop {
+        font-size: 0.7em;
+    }
+    /* TAB - SECTION : Hébergements */
     #section-heb {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         background-color: white;
         padding: 0;
         order: 2;
+        border-radius: 0;
     }
     .h2-heb {
         padding: 2% 0 0 2%;
     }
     #hebergements {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 95%;
+        flex-direction: row;
     }
     #hebergements a {
         display: flex;
         flex-direction: row;
-        width: 85%;
-        border-radius: 10px;
+        width: 95%;
+        border-radius: 20px;
     }
     #cannebiere,
     #hotel-du-port,
@@ -771,8 +783,8 @@ a {
         flex-direction: row;
     }
     .pics-heb {
-        width: 45%;
-        height: auto;
+        width: 50%;
+        height: 200px;
         object-fit: cover;
         object-position: center;
     }
@@ -786,34 +798,37 @@ a {
         bottom: -15px;
         padding-left: 3%;
     }
-    /* Activités à Marseille */
+    /* TAB - Activités à Marseille */
     #section-activites {
         margin: 25px 0 0 0;
         padding: 0 0 0 10px;
-        width: 100%;
     }
     .activites {
         display: flex;
         flex-direction: column;
         align-content: center;
         height: auto;
-        width: 90%;
         align-items: center;
     }
-    .cadre1,
-    .cadre2,
-    .cadre3,
-    .cadre4 {}
-    #vieux-port,
-    #pomegues,
-    #frioul,
-    #calanques,
-    #dame,
-    #longchamps {
-        height: 200px;
-        width: 300px;
+    .cadre1 {
+        width: 100%;
     }
-    /* Footer */
+    .cadre2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .cadre3 {
+        width: 100%
+    }
+    .cadre4 {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    .pics-act-pomegues {
+        height: 60%;
+    }
+    /* TAB - Footer */
     #footer {
         padding: 15px 0px 15px 0px;
     }
@@ -841,7 +856,7 @@ a {
 /* CSS pour les mobiles */
 
 @media all and (max-width: 480px) {
-    /* Menu navigation */
+    /* MOB - Menu navigation */
     #logo {
         display: none;
     }
@@ -868,12 +883,12 @@ a {
         bottom: 0;
         width: 44%;
         text-align: center;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 3px solid #f2f2f2;
     }
     .menu-subs {
         padding-top: 42px;
     }
-    /* Slogan */
+    /* MOB - Slogan */
     #slogan {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -881,7 +896,7 @@ a {
     .slogan2 {
         margin-bottom: 30px;
     }
-    /* Section Recherche */
+    /* MOB - Section Recherche */
     #searchlocation {
         margin-bottom: 40px;
         justify-content: center;
@@ -914,83 +929,87 @@ a {
     .filtre {
         margin-left: 10px;
     }
-    /* Info */
+    /* MOB - Info */
     .infotexte {
         font-size: 0.9em;
     }
-    /* Section HEB-POP */
+    /* MOB - Section HEB-POP */
     #heb-pop {
-        display: flex;
-        flex-flow: column wrap;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        align-items: center;
     }
-    /* SECTION : Les plus populaires */
+    /* MOB - SECTION : Les plus populaires */
     #section-populaires {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding-top: 20px;
         border-radius: 0;
         order: 1;
     }
+    .pop-schema {
+        padding-right: 20px;
+    }
     #populaires {
-        width: 95%
+        flex-direction: column;
+        width: 96%;
     }
-    /*  SECTION : Hébergements */
+    /*  MOB - SECTION : Hébergements */
     #section-heb {
-        width: 100%;
         background-color: white;
-        padding: 0;
+        margin: 0;
         order: 2;
-    }
-    .h2-heb {
-        padding: 2% 0 0 2%;
     }
     #hebergements {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 95%;
+        width: 96%;
     }
     #hebergements a {
-        width: 85%;
-        border-radius: 10px;
+        border-radius: 20px;
+        flex-direction: column;
     }
     .pics-heb {
-        height: 100px
+        width: 100%;
+        height: 150px
     }
     #afficher-plus {
         bottom: -15px;
         padding-left: 3%;
     }
-    /* Activités à Marseille */
+    /* MOB - Activités à Marseille */
     #section-activites {
-        margin: 25px 0 0 0;
-        padding: 0 0 0 10px;
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
     .activites {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 90%;
-        align-items: center;
+        width: 100%;
+    }
+    .h2-act {
+        padding-top: 6%;
+        margin-left: 2%;
     }
     .cadre1,
     .cadre2,
     .cadre3,
-    .cadre4 {}
+    .cadre4 {
+        flex-direction: column;
+        width: 100%;
+    }
     #vieux-port,
     #pomegues,
     #frioul,
     #calanques,
     #dame,
     #longchamps {
-        height: 200px;
-        width: 300px;
+        height: 150px;
+        width: 90%;
     }
-    /* Footer */
+    .texte-act {
+        font-size: 1em;
+    }
+    /* MOB - Footer */
     #footer {
         padding: 15px 0px 15px 0px;
     }
